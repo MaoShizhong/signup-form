@@ -57,11 +57,11 @@ img {
 
 form {
     margin: 1.6em -3em;
-    width: calc(100% + 6em);
+    width: 100%;
 }
 
 .form-box {
-    background-color: rgb(19, 19, 27);
+    background-color: rgba(19, 19, 27, 0.829);
     box-shadow: 0 4px 10px 0 rgb(27, 27, 36);
     margin-bottom: 2em;
     padding: 0.6em 3em;
@@ -96,14 +96,16 @@ input {
 }
 
 input:focus {
-    outline-color: rgb(38, 38, 51);
+    outline: none;
 }
 
-#password:valid {
+#password:valid,
+.valid {
     border: 2px solid #00cc00;
 }
 
-#password:invalid {
+#password:invalid,
+.invalid {
     border: 2px solid #ff0000;
 }
 
@@ -138,12 +140,13 @@ button:hover {
 }
 
 #login {
-    color: rgb(182, 182, 182);
-    text-underline-offset: 4px;
+    color: white;
+    font-weight: 700;
+    text-underline-offset: 6px;
 }
 
 #login:visited {
-    color: rgb(182, 182, 182);
+    color: white;
 }
 
 .hidden {
