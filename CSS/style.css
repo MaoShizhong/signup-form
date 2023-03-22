@@ -44,20 +44,27 @@ img {
     align-items: flex-start;
 }
 
-.form-container {
-    background-color: rgb(19, 19, 27);
+
+form {
     margin: 1.6em -3em;
-    padding: 0 3em;
     width: calc(100% + 6em);
+}
+
+.form-box {
+    background-color: rgb(19, 19, 27);
+    box-shadow: 0 4px 10px 0 rgb(27, 27, 36);
+    margin-bottom: 2em;
+    padding: 0.6em 3em;
+    width: 100%;
 }
 
 fieldset {
     border: none;
-    margin: 1.2em 0;
+    margin: 1.3em 0;
     padding: 0;
     display: flex;
     justify-content: flex-start;
-    gap: 48px;
+    gap: 5em;
 }
 
 fieldset div {
@@ -69,5 +76,38 @@ fieldset div {
 label {
     font-size: 0.9em;
     font-weight: 700;
+}
+
+input {
+    width: 18em;
+}
+
+#create-account {
+    background-color: rgb(38, 38, 51);
+    border: none;
+    border-radius: 0.5em;
+    color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0.5em 1em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#create-account,
+#already-account {
+    margin-left: 3rem;
+}
+
+#login {
+    color: rgb(182, 182, 182);
+    text-underline-offset: 4px;
+}
+
+#login:visited {
+    color: rgb(182, 182, 182);
 }
 

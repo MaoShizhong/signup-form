@@ -27,14 +27,15 @@
                 </h2>
                 <h2>You <em>know</em> you want to.</h2>
 
-                <div class="form-container">
-                    <h2>Let's do this!</h2>
-                    <form>
+                <form>
+                    <div class="form-box">
+                        <h2>Let's do this!</h2>
+
                         <fieldset>
                             <div>
-                                <label for="first-name">FIRST NAME</label>
+                                <label for="first-name">FIRST NAME (required)</label>
                                 <input id="first-name" type="text" name="first_name" required>
-                            </div> 
+                            </div>
                             <div>
                                 <label for="last-name">LAST NAME</label>
                                 <input id="last-name" type="text" name="last_name">
@@ -42,8 +43,8 @@
                         </fieldset>
                         <fieldset>
                             <div>
-                                <label for="email">EMAIL</label>
-                                <input id="email" type="email" name="email">
+                                <label for="email">EMAIL (required)</label>
+                                <input id="email" type="email" name="email" placeholder="address@example.com">
                             </div>
                             <div>
                                 <label for="phone">PHONE NUMBER</label>
@@ -52,20 +53,19 @@
                         </fieldset>
                         <fieldset>
                             <div>
-                                <label for="password">PASSWORD</label>
-                                <input id="password" type="password" name="password">
+                                <label for="password">PASSWORD (required)</label>
+                                <input id="password" type="password" name="password" placeholder="Min. 8 characters">
                             </div>
                             <div>
-                                <label for="password-confirm">CONFIRM PASSWORD</label>
+                                <label for="password-confirm">CONFIRM PASSWORD (required)</label>
                                 <input id="password-confirm" type="password" required>
                             </div>
                         </fieldset>
-                    </form>
-                </div>
+                    </div>
 
-                <button id="create-account">Create Account</button>
-
-                <p>Already have an account? <a href="#">Log in (dummy link)</a></p>
+                    <button id="create-account" type="submit">Create Account</button>
+                    <p id="already-account">Already have an account? <a id="login" href="#">Log in (dummy link)</a></p>
+                </form>
             </div>
         </div>
     </body>
