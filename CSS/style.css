@@ -13,19 +13,29 @@ body {
     display: flex;
 }
 
-.left-pane {
+#left-pane {
+    height: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.logo-container {
+#logo-container {
     background-color: rgba(0, 0, 0, 0.671);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#left-pane::before {
+    content: '';
+    flex: 1;
+}
+
+#left-pane::after {
+    content: '';
+    flex: 3;
 }
 
 img {
@@ -34,7 +44,7 @@ img {
     margin: 24px 0 0 0;
 }
 
-.right-pane {
+#right-pane {
     background-color: rgb(12, 12, 17);
     padding: 3em;
     flex: 2;
@@ -79,7 +89,26 @@ label {
 }
 
 input {
+    border-color: rgb(133, 133, 133);
+    font-size: 1.1em;
+    padding: 8px;
     width: 18em;
+}
+
+input:focus {
+    outline-color: rgb(38, 38, 51);
+}
+
+#password:valid {
+    border: 2px solid rgb(0, 204, 0);
+}
+
+#password:invalid {
+    border: 2px solid red;
+}
+
+#password:placeholder-shown {
+    border-color: rgb(133, 133, 133);
 }
 
 #create-account {
