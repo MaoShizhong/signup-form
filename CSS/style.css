@@ -28,6 +28,12 @@ body {
     align-items: center;
 }
 
+img {
+    height: auto;
+    width: 30%;
+    margin: 24px 0 0 0;
+}
+
 .right-pane {
     background-color: rgb(12, 12, 17);
     padding: 3em;
@@ -38,7 +44,28 @@ body {
     align-items: flex-start;
 }
 
-form div {
+.form-container {
+    background-color: rgb(19, 19, 27);
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    margin: 1.2em 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 48px;
+}
+
+fieldset div {
     display: flex;
     flex-direction: column;
+    gap: 2px;
 }
+
+label {
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
