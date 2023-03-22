@@ -100,15 +100,21 @@ input:focus {
 }
 
 #password:valid {
-    border: 2px solid rgb(0, 204, 0);
+    border: 2px solid #00cc00;
 }
 
 #password:invalid {
-    border: 2px solid red;
+    border: 2px solid #ff0000;
 }
 
 #password:placeholder-shown {
     border-color: rgb(133, 133, 133);
+}
+
+#match-error {
+    color: rgb(255, 191, 191);
+    margin: 0;
+    padding: 0;
 }
 
 #create-account {
@@ -140,3 +146,6 @@ button:hover {
     color: rgb(182, 182, 182);
 }
 
+.hidden {
+    display: none;
+}

@@ -54,11 +54,12 @@
                         <fieldset>
                             <div>
                                 <label for="password">PASSWORD (required)</label>
-                                <input id="password" class="" type="password" name="password" placeholder="Min. 8 characters" autocomplete="off" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$" title="Must contain at least one uppercase and lowercase letter, at least one number, and be a total of at least 8 characters" required>
+                                <input id="password" type="password" name="password" placeholder="Min. 8 characters" autocomplete="off" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$" title="Must contain at least one uppercase and lowercase letter, at least one number, and be a total of at least 8 characters" required>
                             </div>
                             <div>
                                 <label for="password-confirm">CONFIRM PASSWORD (required)</label>
-                                <input id="password-confirm" class="" type="password" minlength="8" autocomplete="off" required>
+                                <input id="password-confirm" type="password" minlength="8" autocomplete="off" required>
+                                <p id="match-error" class="hidden">* Passwords do not match</p>
                             </div>
                         </fieldset>
                     </div>
